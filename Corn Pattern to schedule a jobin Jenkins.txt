@@ -1,0 +1,21 @@
+Jenkins works on Cron pattern for more info about cron refer cron link http://en.wikipedia.org/wiki/Cron
+
+Jenkins will accept 5 parameter lets discuss one by one
+
+* * * * *
+
+Here the first parameter- specify minute and range will vary from 0-59
+
+Here the second parameter- specify hours and range will vary from 0-11
+
+Here the third parameter- specify day and range will vary from 0-7 here 0 and 7 will be Sunday
+
+Here the fourth parameter- specify month and range will vary from 1-12
+
+Here the fifth parameter- specify year so here you can specify *
+
+Example 1- if you specify    00 22 * * *  it means your build will run daily @ 10 PM
+
+Example 2- if you specify    50 * * * *  it means your build will run daily  50 min  after every hour
+
+Example 3- if you specify    00 22 1 * *  it means your build will run every Monday @ 10 PM
